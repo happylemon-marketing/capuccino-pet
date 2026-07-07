@@ -15,7 +15,7 @@ type Mode = "meses" | "fecha";
 export default function Calculator() {
   const [species, setSpecies] = useState<SpeciesId>("ruso");
   const [mode, setMode] = useState<Mode>("meses");
-  const [months, setMonths] = useState<number>(6);
+  const [months, setMonths] = useState<number>(18);
   const [birth, setBirth] = useState<string>("");
 
   const monthsValue = useMemo(() => {
