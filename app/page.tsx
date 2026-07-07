@@ -37,12 +37,12 @@ export default function Home() {
               </p>
 
               <div className="mt-10 flex items-start gap-4">
-                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-1 ring-[color:var(--line)] shrink-0 shadow-[0_8px_20px_-8px_rgba(79,127,255,0.35)]">
+                <div className="w-40 h-40 sm:w-44 sm:h-44 rounded-2xl overflow-hidden ring-1 ring-[color:var(--line)] shrink-0 shadow-[0_10px_28px_-10px_rgba(79,127,255,0.4)]">
                   <Image
                     src="/capuccino.webp"
                     alt="Capuccino, hámster amado"
-                    width={200}
-                    height={200}
+                    width={280}
+                    height={280}
                     priority
                     className="w-full h-full object-cover"
                   />

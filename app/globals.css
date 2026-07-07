@@ -45,7 +45,23 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, var(--bone) 0%, var(--bone-deep) 100%);
+  background:
+    radial-gradient(
+      ellipse 80% 55% at 85% 8%,
+      rgba(79, 127, 255, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 70% 50% at 10% 95%,
+      rgba(248, 111, 3, 0.09),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 50% 45%,
+      rgba(255, 164, 27, 0.05),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--bone) 0%, var(--bone-deep) 100%);
   background-attachment: fixed;
   color: var(--ink);
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont,
