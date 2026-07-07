@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import {
   SPECIES,
@@ -35,11 +36,11 @@ export default function Calculator() {
   return (
     <div className="rounded-[28px] p-5 sm:p-6 card-shadow bg-[color:var(--card)]">
       <div className="grid gap-5">
-        <div className="text-center rounded-2xl bg-gradient-to-br from-[color:var(--hope-soft)] via-[color:var(--mary-soft)] to-[color:var(--hope-soft)] px-4 py-5">
+        <div className="text-center rounded-2xl bg-[color:var(--bone)] px-4 py-5">
           <div className="tightest text-[76px] sm:text-[92px] font-semibold leading-[0.9] text-[color:var(--hope)]">
             {result.humanYears}
           </div>
-          <div className="text-[11px] uppercase tracking-[0.22em] text-[color:var(--hope)] mt-2 opacity-80">
+          <div className="text-[11px] uppercase tracking-[0.22em] text-[color:var(--ink-mute)] mt-2">
             Años humanos
           </div>
           <div className="text-[13px] text-[color:var(--ink-soft)] mt-3">
@@ -59,7 +60,7 @@ export default function Calculator() {
         </div>
 
         <div className="grid gap-2">
-          <p className="text-[10px] uppercase tracking-[0.22em] text-[color:var(--hope)] opacity-80">
+          <p className="text-[10px] uppercase tracking-[0.22em] text-[color:var(--ink-mute)]">
             Elige tu hámster
           </p>
           <div className="grid grid-cols-5 gap-2">
@@ -72,24 +73,24 @@ export default function Calculator() {
                   onClick={() => setSpecies(s.id)}
                   className={`group flex flex-col items-center gap-1.5 rounded-2xl p-1.5 transition ${
                     active
-                      ? "bg-[color:var(--hope-soft)] ring-2 ring-[color:var(--hope)]"
-                      : "bg-[color:var(--line-soft)] hover:bg-[color:var(--hope-soft)]"
+                      ? "bg-[color:var(--bluby-soft)] ring-2 ring-[color:var(--bluby)]"
+                      : "bg-[color:var(--line-soft)] hover:bg-[color:var(--bluby-soft)]/60"
                   }`}
                   aria-pressed={active}
                 >
                   <div className="w-full aspect-square rounded-xl overflow-hidden bg-white">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={s.image}
                       alt={s.name}
-                      loading="lazy"
+                      width={120}
+                      height={120}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <span
                     className={`text-[10px] leading-tight text-center transition ${
                       active
-                        ? "text-[color:var(--hope)] font-semibold"
+                        ? "text-[color:var(--bluby)] font-semibold"
                         : "text-[color:var(--ink-soft)]"
                     }`}
                   >
@@ -103,7 +104,7 @@ export default function Calculator() {
 
         <div className="grid gap-3">
           <div className="flex items-center justify-between">
-            <p className="text-[10px] uppercase tracking-[0.22em] text-[color:var(--hope)] opacity-80">
+            <p className="text-[10px] uppercase tracking-[0.22em] text-[color:var(--ink-mute)]">
               Edad
             </p>
             <div className="flex gap-1 p-0.5 rounded-full bg-[color:var(--line-soft)]">
@@ -112,7 +113,7 @@ export default function Calculator() {
                 onClick={() => setMode("meses")}
                 className={`px-3 py-1 rounded-full text-[11px] transition font-medium ${
                   mode === "meses"
-                    ? "bg-[color:var(--hope)] text-white shadow-[0_1px_2px_rgba(248,111,3,0.35)]"
+                    ? "bg-[color:var(--ink)] text-white shadow-[0_1px_2px_rgba(28,25,23,0.2)]"
                     : "text-[color:var(--ink-mute)]"
                 }`}
               >
@@ -123,7 +124,7 @@ export default function Calculator() {
                 onClick={() => setMode("fecha")}
                 className={`px-3 py-1 rounded-full text-[11px] transition font-medium ${
                   mode === "fecha"
-                    ? "bg-[color:var(--hope)] text-white shadow-[0_1px_2px_rgba(248,111,3,0.35)]"
+                    ? "bg-[color:var(--ink)] text-white shadow-[0_1px_2px_rgba(28,25,23,0.2)]"
                     : "text-[color:var(--ink-mute)]"
                 }`}
               >
@@ -135,7 +136,7 @@ export default function Calculator() {
           {mode === "meses" ? (
             <div className="grid gap-2 rounded-2xl bg-[color:var(--line-soft)] px-4 py-3">
               <div className="flex items-baseline justify-between">
-                <span className="tightest text-2xl font-semibold text-[color:var(--hope)]">
+                <span className="tightest text-2xl font-semibold text-[color:var(--ink)]">
                   {months}
                 </span>
                 <span className="text-[11px] uppercase tracking-[0.18em] text-[color:var(--ink-mute)]">
@@ -159,7 +160,7 @@ export default function Calculator() {
               value={birth}
               max={new Date().toISOString().slice(0, 10)}
               onChange={(e) => setBirth(e.target.value)}
-              className="border border-[color:var(--line)] rounded-xl px-3 py-2.5 bg-[color:var(--line-soft)] text-[color:var(--ink)] text-[14px] w-full focus:outline-none focus:border-[color:var(--hope)] focus:bg-white transition"
+              className="border border-[color:var(--line)] rounded-xl px-3 py-2.5 bg-[color:var(--line-soft)] text-[color:var(--ink)] text-[14px] w-full focus:outline-none focus:border-[color:var(--ink)] focus:bg-white transition"
               aria-label="Fecha de nacimiento"
             />
           )}

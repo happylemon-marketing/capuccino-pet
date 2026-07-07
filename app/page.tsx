@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Calculator from "@/components/Calculator";
 import { JsonLd } from "@/components/JsonLd";
+import { SeoContent } from "@/components/SeoContent";
 
 const CAPUCCINO = {
   name: "Capuccino",
@@ -36,10 +38,12 @@ export default function Home() {
 
               <div className="mt-10 flex items-start gap-4">
                 <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-1 ring-[color:var(--line)] shrink-0 shadow-[0_8px_20px_-8px_rgba(79,127,255,0.35)]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/capuccino.jpg"
+                  <Image
+                    src="/capuccino.webp"
                     alt="Capuccino, hámster amado"
+                    width={200}
+                    height={200}
+                    priority
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -80,6 +84,15 @@ export default function Home() {
                   código abierto
                 </a>
               </p>
+
+              <p className="mt-6">
+                <a
+                  href="#saber-mas"
+                  className="text-[11px] uppercase tracking-[0.22em] text-[color:var(--ink-mute)] hover:text-[color:var(--hope)] transition"
+                >
+                  Saber más ↓
+                </a>
+              </p>
             </div>
 
             <div className="order-2 w-full">
@@ -87,6 +100,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <SeoContent />
       </main>
     </>
   );
