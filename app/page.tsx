@@ -70,6 +70,15 @@ export default function Home() {
                 >
                   Happy Lemon Marketing
                 </a>
+                <span className="mx-1.5 text-[color:var(--line)]">·</span>
+                <a
+                  href="https://github.com/luisrochag/capuccino-pet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[color:var(--ink-soft)] hover:text-[color:var(--hope)] transition underline decoration-dotted underline-offset-2"
+                >
+                  código abierto
+                </a>
               </p>
             </div>
 
