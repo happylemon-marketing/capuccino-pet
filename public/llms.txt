@@ -1,0 +1,30 @@
+# capuccino.pet
+
+> Calculadora online gratuita para saber la edad de un hámster en años humanos, según su especie. Sitio memorial dedicado a Capuccino, un hámster enano ruso.
+
+## Sobre el sitio
+
+- Idioma: español
+- Público: personas con hámster como mascota que quieren estimar su edad en años humanos, entender su etapa de vida y su esperanza de vida.
+- Herramienta principal: calculadora interactiva que recibe edad en meses o fecha de nacimiento + especie (sirio, roborovski, enano ruso, chino, campbell) y devuelve edad equivalente en años humanos, etapa de vida y % de vida típica vivida.
+- Filosofía: aproximación honesta, no promesas. Los primeros meses de un hámster equivalen a mucho más que los últimos.
+
+## Contenido principal
+
+- [Calculadora de edad](https://capuccino.pet/#calculadora)
+- [Esperanza de vida por especie](https://capuccino.pet/#especies)
+- [Cómo se calcula](https://capuccino.pet/#como-se-calcula)
+- [Etapas de vida](https://capuccino.pet/#etapas)
+- [Preguntas frecuentes](https://capuccino.pet/#faq)
+
+## Datos por especie (esperanza de vida típica en meses)
+
+- Hámster sirio (Mesocricetus auratus): 30 meses típicos, rango 24–42
+- Hámster roborovski (Phodopus roborovskii): 40 meses típicos, rango 30–48
+- Hámster enano ruso / Winter White (Phodopus sungorus): 22 meses típicos, rango 18–30
+- Hámster chino (Cricetulus griseus): 30 meses típicos, rango 24–36
+- Hámster Campbell (Phodopus campbelli): 24 meses típicos, rango 18–30
+
+## Memorial
+
+Este sitio está dedicado a Capuccino, un hámster enano ruso que vivió 18 meses. Cada cálculo que hace un visitante honra su memoria.

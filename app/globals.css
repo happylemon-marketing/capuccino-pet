@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bone: #fff6f4;
+  --bone-deep: #ffe9e2;
+  --hope: #f86f03;
+  --hope-soft: #ffd8bd;
+  --mary: #ffa41b;
+  --mary-soft: #ffe4b8;
+  --bluby: #4f7fff;
+  --bluby-soft: #d9e4ff;
+  --ink: #1c1917;
+  --ink-soft: #57534e;
+  --ink-mute: #a8a29e;
+  --line: #ffe0d3;
+  --line-soft: #fff0e8;
+  --card: #ffffff;
+  --shadow: 0 1px 2px rgba(28, 25, 23, 0.04),
+    0 12px 32px -10px rgba(248, 111, 3, 0.22);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bone: var(--bone);
+  --color-bone-deep: var(--bone-deep);
+  --color-hope: var(--hope);
+  --color-hope-soft: var(--hope-soft);
+  --color-mary: var(--mary);
+  --color-mary-soft: var(--mary-soft);
+  --color-bluby: var(--bluby);
+  --color-bluby-soft: var(--bluby-soft);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-mute: var(--ink-mute);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, var(--bone) 0%, var(--bone-deep) 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.011em;
+  min-height: 100dvh;
+}
+
+.tightest {
+  letter-spacing: -0.045em;
+}
+
+.card-shadow {
+  box-shadow: var(--shadow);
+}
+
+::selection {
+  background: var(--hope);
+  color: white;
 }

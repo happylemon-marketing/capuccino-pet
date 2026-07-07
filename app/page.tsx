@@ -1,65 +1,84 @@
-import Image from "next/image";
+import Calculator from "@/components/Calculator";
+import { JsonLd } from "@/components/JsonLd";
+
+const CAPUCCINO = {
+  name: "Capuccino",
+  species: "Enano ruso",
+  scientific: "Phodopus sungorus",
+  months: 18,
+  story: "Te extrañaremos, Capuccino.",
+  parents: "Tu papá Luis y tu mami Scarlet",
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <JsonLd />
+      <main className="flex-1 flex flex-col">
+        <section
+          className="min-h-[100dvh] flex items-center justify-center px-6 py-10"
+          aria-label="Calculadora de edad de hámster"
+        >
+          <div className="w-full max-w-5xl grid gap-10 md:grid-cols-[1.05fr_1fr] md:gap-14 items-center">
+            <div className="text-left md:pr-4 order-1">
+              <h1 className="tightest text-[42px] sm:text-[56px] md:text-[64px] leading-[0.98] font-semibold text-[color:var(--ink)]">
+                Calculadora
+                <br />
+                de edad
+                <br />
+                de{" "}
+                <span className="text-[color:var(--hope)]">hámster</span>.
+              </h1>
+              <p className="text-[15px] sm:text-[17px] text-[color:var(--ink-soft)] mt-6 leading-[1.55] max-w-sm">
+                Cuántos años humanos tiene tu hámster, según su especie.
+                Gratis, sin registro, en segundos.
+              </p>
+
+              <div className="mt-10 flex items-start gap-4">
+                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-1 ring-[color:var(--line)] shrink-0 shadow-[0_8px_20px_-8px_rgba(79,127,255,0.35)]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/capuccino.jpg"
+                    alt="Capuccino, hámster amado"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="grid gap-0.5 pt-1">
+                  <p className="text-[9px] uppercase tracking-[0.28em] text-[color:var(--ink-mute)]">
+                    En memoria de
+                  </p>
+                  <p className="tightest text-[22px] font-semibold text-[color:var(--bluby)] leading-none">
+                    {CAPUCCINO.name}
+                  </p>
+                  <p className="text-[11px] italic text-[color:var(--ink-mute)] leading-[1.55] max-w-[260px] mt-2">
+                    {CAPUCCINO.story}
+                  </p>
+                  <p className="text-[11px] text-[color:var(--ink-soft)] leading-[1.55] max-w-[260px] mt-1">
+                    {CAPUCCINO.parents}
+                  </p>
+                </div>
+              </div>
+
+              <p className="mt-8 text-[10px] text-[color:var(--ink-mute)]">
+                made with{" "}
+                <span className="text-[color:var(--hope)]">♥</span> by{" "}
+                <a
+                  href="https://happylemon.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[color:var(--ink-soft)] hover:text-[color:var(--hope)] transition underline decoration-dotted underline-offset-2"
+                >
+                  Happy Lemon Marketing
+                </a>
+              </p>
+            </div>
+
+            <div className="order-2 w-full">
+              <Calculator />
+            </div>
+          </div>
+        </section>
       </main>
-    </div>
+    </>
   );
 }
