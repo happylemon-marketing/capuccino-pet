@@ -29,7 +29,7 @@ export default function Home() {
                 de edad
                 <br />
                 de{" "}
-                <span className="text-[color:var(--hope)]">hámster</span>.
+                <span className="text-[color:var(--bluby)]">hámster</span>.
               </h1>
               <p className="text-[15px] sm:text-[17px] text-[color:var(--ink-soft)] mt-6 leading-[1.55] max-w-sm">
                 Cuántos años humanos tiene tu hámster, según su especie.
@@ -88,7 +88,7 @@ export default function Home() {
               <p className="mt-6">
                 <a
                   href="#saber-mas"
-                  className="text-[11px] uppercase tracking-[0.22em] text-[color:var(--ink-mute)] hover:text-[color:var(--hope)] transition"
+                  className="text-[11px] uppercase tracking-[0.22em] text-[color:var(--ink-mute)] hover:text-[color:var(--bluby)] transition"
                 >
                   Saber más ↓
                 </a>

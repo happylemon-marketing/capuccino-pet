@@ -52,9 +52,9 @@ export default function Calculator() {
           </div>
         </div>
 
-        <div className="h-[6px] rounded-full bg-[color:var(--mary-soft)] overflow-hidden">
+        <div className="h-[6px] rounded-full bg-[color:var(--bluby-soft)] overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-[color:var(--mary)] to-[color:var(--hope)] transition-all duration-500"
+            className="h-full rounded-full bg-[color:var(--bluby)] transition-all duration-500"
             style={{ width: `${Math.min(100, result.pctLived)}%` }}
           />
         </div>

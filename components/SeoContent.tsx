@@ -9,13 +9,13 @@ export function SeoContent() {
     >
       <div className="mx-auto max-w-2xl px-6">
         <header className="mb-12 text-center">
-          <p className="text-[10px] uppercase tracking-[0.28em] text-[color:var(--hope)] mb-3">
+          <p className="text-[10px] uppercase tracking-[0.28em] text-[color:var(--bluby)] mb-3">
             Todo sobre la edad de tu hámster
           </p>
           <h2 className="tightest text-[32px] sm:text-[40px] leading-[1.05] font-semibold text-[color:var(--ink)]">
             Cuánto vive y cómo envejece
             <br />
-            un <span className="text-[color:var(--hope)]">hámster</span>.
+            un <span className="text-[color:var(--bluby)]">hámster</span>.
           </h2>
           <p className="text-[15px] text-[color:var(--ink-soft)] mt-5 leading-[1.6]">
             Los hámsters viven poco comparados con otras mascotas, pero
@@ -52,7 +52,7 @@ export function SeoContent() {
                       </p>
                     </div>
                     <div className="text-right shrink-0">
-                      <div className="tightest text-[22px] font-semibold text-[color:var(--hope)] leading-none">
+                      <div className="tightest text-[22px] font-semibold text-[color:var(--bluby)] leading-none">
                         {(s.lifespanMonths.typical / 12).toFixed(1)}
                       </div>
                       <div className="text-[10px] uppercase tracking-[0.18em] text-[color:var(--ink-mute)] mt-1">
@@ -113,7 +113,7 @@ export function SeoContent() {
                 Por eso usamos una curva por etapas, no una simple
                 multiplicación. El modelo funciona así:
               </p>
-              <ul className="space-y-2 pl-5 list-disc marker:text-[color:var(--hope)]">
+              <ul className="space-y-2 pl-5 list-disc marker:text-[color:var(--bluby)]">
                 <li>
                   <strong className="text-[color:var(--ink)]">
                     Mes 0-1 (bebé):
@@ -263,7 +263,7 @@ export function SeoContent() {
                 últimos meses con más calidad.
               </p>
               <p>Señales que suelen aparecer entre los 15 y 18 meses:</p>
-              <ul className="space-y-2 pl-5 list-disc marker:text-[color:var(--hope)]">
+              <ul className="space-y-2 pl-5 list-disc marker:text-[color:var(--bluby)]">
                 <li>
                   <strong className="text-[color:var(--ink)]">
                     Duerme más:
@@ -322,7 +322,7 @@ export function SeoContent() {
                 Si adoptaste un hámster sin fecha de nacimiento, se puede
                 estimar su edad observando cuatro cosas:
               </p>
-              <ol className="space-y-3 pl-5 list-decimal marker:text-[color:var(--hope)] marker:font-semibold">
+              <ol className="space-y-3 pl-5 list-decimal marker:text-[color:var(--bluby)] marker:font-semibold">
                 <li>
                   <strong className="text-[color:var(--ink)]">Tamaño.</strong>{" "}
                   Un hámster joven de tienda mide unos 5-7 cm en sirios y
@@ -414,9 +414,9 @@ function AccordionSection({
 }) {
   return (
     <details className="group rounded-2xl bg-[color:var(--card)] border border-[color:var(--line)] overflow-hidden">
-      <summary className="flex items-center justify-between cursor-pointer list-none px-5 py-4 text-[15px] font-semibold text-[color:var(--ink)] hover:bg-[color:var(--hope-soft)]/40 transition">
+      <summary className="flex items-center justify-between cursor-pointer list-none px-5 py-4 text-[15px] font-semibold text-[color:var(--ink)] hover:bg-[color:var(--bluby-soft)]/40 transition">
         <span>{title}</span>
-        <span className="text-[color:var(--hope)] text-2xl leading-none group-open:rotate-45 transition-transform duration-200 shrink-0 ml-3">
+        <span className="text-[color:var(--bluby)] text-2xl leading-none group-open:rotate-45 transition-transform duration-200 shrink-0 ml-3">
           +
         </span>
       </summary>
@@ -440,7 +440,7 @@ function StageCard({
     <div className="rounded-xl border border-[color:var(--line)] p-4 bg-[color:var(--bone)]/60">
       <div className="flex items-baseline justify-between mb-1.5">
         <h4 className="font-semibold text-[color:var(--ink)]">{label}</h4>
-        <span className="text-[11px] text-[color:var(--hope)] uppercase tracking-[0.15em] font-medium">
+        <span className="text-[11px] text-[color:var(--bluby)] uppercase tracking-[0.15em] font-medium">
           {range}
         </span>
       </div>

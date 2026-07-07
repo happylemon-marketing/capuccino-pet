@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --bone: #fff6f4;
-  --bone-deep: #ffe9e2;
+  --bone: #fbfaf7;
+  --bone-deep: #f3f1ec;
   --hope: #f86f03;
   --hope-soft: #ffd8bd;
   --mary: #ffa41b;
@@ -12,11 +12,11 @@
   --ink: #1c1917;
   --ink-soft: #57534e;
   --ink-mute: #a8a29e;
-  --line: #ffe0d3;
-  --line-soft: #fff0e8;
+  --line: #e8e4dc;
+  --line-soft: #f0ede6;
   --card: #ffffff;
   --shadow: 0 1px 2px rgba(28, 25, 23, 0.04),
-    0 12px 32px -10px rgba(248, 111, 3, 0.22);
+    0 12px 32px -10px rgba(79, 127, 255, 0.18);
 }
 
 @theme inline {
