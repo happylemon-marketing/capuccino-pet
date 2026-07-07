@@ -47,17 +47,17 @@ export default function Home() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="grid gap-0.5 pt-1">
-                  <p className="text-[9px] uppercase tracking-[0.28em] text-[color:var(--ink-mute)]">
+                <div className="grid gap-1 pt-1">
+                  <p className="text-[12px] text-[color:var(--ink-mute)] leading-[1.5]">
                     En memoria de
                   </p>
-                  <p className="tightest text-[22px] font-semibold text-[color:var(--bluby)] leading-none">
+                  <p className="text-[20px] font-semibold text-[color:var(--bluby)] leading-[1.2]">
                     {CAPUCCINO.name}
                   </p>
-                  <p className="text-[11px] italic text-[color:var(--ink-mute)] leading-[1.55] max-w-[260px] mt-2">
+                  <p className="text-[12px] text-[color:var(--ink-soft)] leading-[1.55] max-w-[260px] mt-1">
                     {CAPUCCINO.story}
                   </p>
-                  <p className="text-[11px] text-[color:var(--ink-soft)] leading-[1.55] max-w-[260px] mt-1">
+                  <p className="text-[12px] text-[color:var(--ink-soft)] leading-[1.55] max-w-[260px]">
                     {CAPUCCINO.parents}
                   </p>
                 </div>
